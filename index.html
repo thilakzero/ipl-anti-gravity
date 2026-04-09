@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Gravity IPL Analytics Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1 class="glow-text">ANTI-GRAVITY ENGINE v2.4</h1>
+            <p>Live Match Telemetry: Team A (CSK) vs Team B (RCB)</p>
+        </header>
+
+        <main class="grid-container">
+            <!-- Context Card -->
+            <div class="glass-card context">
+                <h2>Match Parameters</h2>
+                <ul>
+                    <li><strong>Venue:</strong> M. Chinnaswamy Stadium, Bengaluru</li>
+                    <li><strong>Toss:</strong> RCB elected to Bowl First</li>
+                    <li><strong>Pitch:</strong> Hard deck, heavy dew expected</li>
+                </ul>
+                <div class="x-factor">
+                    <h3>⚠️ X-Factor Alert</h3>
+                    <p><strong>Matheesha Pathirana</strong><br>Anti-Gravity Disruptor. Reverses win matrix by 12% in death overs due to slinging action defying standardized trajectory physics.</p>
+                </div>
+            </div>
+
+            <!-- Probability Chart -->
+            <div class="glass-card probability">
+                <h2>Win Probability Forecast</h2>
+                <div class="chart-container">
+                    <canvas id="winChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Gravity Index Bar Chart -->
+            <div class="glass-card index-chart">
+                <h2>Team Gravity Index Shift</h2>
+                <div class="chart-container">
+                    <canvas id="indexChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Player Matrix Radar Chart -->
+            <div class="glass-card player-matrix">
+                <h2>Core Player Base Matrix Comparison</h2>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
