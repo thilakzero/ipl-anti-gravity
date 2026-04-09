@@ -68,6 +68,18 @@ st.markdown("""
     hr {
         border-color: rgba(0, 210, 255, 0.2) !important;
     }
+    
+    /* Mobile Responsiveness Auto-Stack */
+    @media (max-width: 768px) {
+        [data-testid="column"] {
+            width: 100% !important;
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+        }
+        .stPlotlyChart {
+            width: 100% !important;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
